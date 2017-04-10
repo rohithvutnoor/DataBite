@@ -328,7 +328,6 @@ router.get('/sugarcane', function(req, res, next) {
 
     var rcmnd = mine2("sugarcane");
     mine3("sugarcane");
-
     setTimeout(function () {
         res.render('product', {
             title:"sugarcane",
@@ -343,11 +342,13 @@ router.get('/sugarcane', function(req, res, next) {
 //2
 router.get('/rice', function(req, res, next) {
     var rcmnd = mine2("rice");
+    mine3("rice");
     setTimeout(function () {
     res.render('product', {
         title:"rice",
         name:"rice",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1600);
 });
@@ -355,11 +356,13 @@ router.get('/rice', function(req, res, next) {
 //3
 router.get('/potato', function(req, res, next) {
     var rcmnd = mine2("potato");
+    mine3("potato");
     setTimeout(function () {
     res.render('product', {
         title:"potato",
         name:"potato",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
@@ -367,11 +370,13 @@ router.get('/potato', function(req, res, next) {
 //4
 router.get('/wheat', function(req, res, next) {
     var rcmnd = mine2("wheat");
+    mine3("wheat");
     setTimeout(function () {
     res.render('product', {
         title:"wheat",
         name:"wheat",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
@@ -379,11 +384,13 @@ router.get('/wheat', function(req, res, next) {
 //5
 router.get('/onion', function(req, res, next) {
     var rcmnd = mine2("onion");
+    mine3("onion");
     setTimeout(function () {
     res.render('product', {
         title:"onion",
         name:"onion",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
@@ -391,11 +398,13 @@ router.get('/onion', function(req, res, next) {
 //6
 router.get('/maize', function(req, res, next) {
     var rcmnd = mine2("maize");
+    mine3("maize");
     setTimeout(function () {
     res.render('product', {
         title:"maize",
         name:"maize",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
@@ -403,11 +412,13 @@ router.get('/maize', function(req, res, next) {
 //7
 router.get('/banana', function(req, res, next) {
     var rcmnd = mine2("banana");
+    mine3("banana");
     setTimeout(function () {
     res.render('product', {
         title:"banana",
         name:"banana",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
@@ -415,11 +426,13 @@ router.get('/banana', function(req, res, next) {
 //8
 router.get('/cashew', function(req, res, next) {
     var rcmnd = mine2("cashew");
+    mine3("cashew");
     setTimeout(function () {
     res.render('product', {
         title:"cashew",
         name:"cashew",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
@@ -427,47 +440,55 @@ router.get('/cashew', function(req, res, next) {
 //9
 router.get('/guava', function(req, res, next) {
     var rcmnd = mine2("guava");
+    mine3("guava");
     setTimeout(function () {
     res.render('product', {
         title:"guava",
         name:"guava",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
 
 //10
-router.get('/sugarcane', function(req, res, next) {
-    var rcmnd = mine2("sugarcane");
+router.get('/mango', function(req, res, next) {
+    var rcmnd = mine2("mango");
+    mine3("mango");
     setTimeout(function () {
     res.render('product', {
         title:"products",
-        name:"banana1",
-        data:rcmnd
+        name:"mango",
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
 
-//10
+//11
 router.get('/pineapple', function(req, res, next) {
     var rcmnd = mine2("pineapple");
+    mine3("pineapple");
     setTimeout(function () {
     res.render('product', {
         title:"pineapple",
         name:"pineapple",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
 
-//10
+//12
 router.get('/custardapple', function(req, res, next) {
     var rcmnd = mine2("custardapple");
+    mine3("custardapple");
     setTimeout(function () {
     res.render('product', {
         title:"custardapple",
         name:"custardapple",
-        data:rcmnd
+        data:rcmnd,
+        currentItem:itd[0]
     });
     }, 1500);
 });
