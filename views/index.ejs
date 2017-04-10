@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>DataBite</title>
+    <meta charset = "utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://cdn5.bigcommerce.com/r-a2832a4688ce29764def846020ed5b29c4ced5ef/themes/__master/Styles/styles.css" type="text/css" rel="stylesheet" />
+    <link href="http://cdn5.bigcommerce.com/r-4d6a264212326b5ad5c97a6f9daf83cc47e28858/themes/Organicfood/Styles/styles.css" media="all" type="text/css" rel="stylesheet" />
+    <link href="http://cdn5.bigcommerce.com/r-4d6a264212326b5ad5c97a6f9daf83cc47e28858/themes/Organicfood/Styles/green.css" media="all" type="text/css" rel="stylesheet" />
+    <style type="text/css"> #Container { background-image: url("http://cdn1.bigcommerce.com/server1000/4d44c/product_images/header_images/Organicfood_headerImage.jpg"); } </style>
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+
+
+  </head>
+
+
+  <body >
+    <div id="Container">
+      <div id="Outer">
+        <div id="Header">
+          <br class="Clear" />
+        </div>
+        <div id="Menu"><center><h4></h4></center>
+          <!--<ul>
+            <li class="First "><a href="http://www.mygreengrocer.co.nz/"><span>Home</span></a></li>
+            <li class=" "><a href="http://www.mygree"><span>About our Store</span></a></li>
+          </ul>-->
+        </div>
+
+
+        <div id="Wrapper">
+
+          <!--<div class="Left" id="LayoutColumn1">
+
+            <div class="Block CategoryList Moveable Panel" id="SideCategoryList">
+              <h2>Start Shopping!</h2>
+              <div class="BlockContent">
+                asd
+              </div>
+            </div>
+
+
+            <div class="Block SideRelatedProducts Moveable Panel" style="" id="SideProductRelated">
+              <h2>Related Products</h2>
+              <div class="BlockContent">
+                <ul class="ProductList">
+
+                </ul>
+              </div>
+            </div>
+          </div>-->
+          <center><h3>
+              <%= title%>
+            </h3></center> <br><br>
+          <div >
+            <% products.forEach(function(item){%>
+            <div class="imgs"><a href="/product/<%= item.name%>">
+              <div class="card" style="width: 30rem;">
+                <center><img class="card-img-top"  style="width: 280px; height: 190px;" src="../images/productImage/<%= item.name%>.jpg" alt="Card image cap">
+                </center><div class="card-block">
+                  <center><h4 class="card-title"><%= item.name%></h4></center>
+                 </div>
+              </div></a>
+            </div>
+            <%});%>
+
+
+
+            <style>
+              .imgs{
+                float:left;
+                align-content: center;
+              }
+            </style>
+
+          </div>
+
+        </div>
+
+        <br class="Clear" />
+
+      </div>
+    </div>
+
+    <div id="Footer">
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

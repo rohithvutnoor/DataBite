@@ -1,0 +1,597 @@
+.CartExpectedReleaseDate {
+    font-style: italic;
+    font-size: 11px;
+}
+
+.OrderItemList .ExpectedReleaseDate {
+    display: block;
+    font-size: 11px;
+}
+
+.CartContents .ExpectedReleaseDate {
+    font-size: 11px;
+    padding-left: 20px;
+}
+
+.ProductMain table.ExpectedReleaseDate {
+    clear: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px
+}
+
+.ProductMain table.ExpectedReleaseDate td {
+    padding: 6px;
+    border: solid 1px;
+
+    /* default colours to be overridden, as needed, by templates */
+    background-color: #FFF1A8;
+    border-color: #E8B541;
+    color: #353535;
+}
+
+.BrandCloud {
+    overflow-x: hidden;
+}
+
+.CartProductFields dt {
+    font-weight: bold;
+    clear: left;
+}
+
+.CartProductFields dd {
+    margin-left: 50px;
+}
+
+.ProductPrice .CatalogPriceExTax,
+.ProductList em .CatalogPriceExTax,
+.ProductPrice .ProductDetailsPriceExTax,
+.ProductList em .ProductDetailsPriceExTax {
+    display: block;
+    color: #777;
+}
+
+.CartContents .ItemShipping th.ItemShippingDescription {
+    text-align: left;
+}
+
+.CartContents .ItemShipping th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 6px 10px;
+}
+
+.CartContents .ItemShipping:first-child th {
+    border-top: none;
+}
+
+.CartContents tbody td,
+.CartContents tfoot td {
+    padding: 6px 10px;
+    vertical-align: top;
+}
+
+.CartContents tfoot .SubTotal td {
+    border-top: 1px solid;
+    text-align: right;
+    font-weight: bold;
+}
+
+.OrderShipments .DateShipped {
+    white-space: nowrap;
+    width: 20%;
+}
+
+.OrderShipments .ShippingMethod {
+    width: 55%;
+}
+
+.OrderShipments .TrackingNumber {
+    white-space: nowrap;
+    width: 25%;
+}
+
+.PinterestButtonContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div.FacebookLikeButtonContainer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.FacebookLikeButtonContainer iframe {
+    width: 100%;
+    height: 65px;
+    border: none;
+    overflow: hidden;
+}
+
+.HorizontalFormContainer p.Submit {
+    margin-top: 10px;
+}
+
+#fastCartContainer {
+    margin: 0 auto;
+}
+#fastCartWrapper {
+    clear: both;
+    padding: 5px;
+}
+#fastCartContainer .ProductList {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#fastCartContainer .ProductList li {
+    margin: 3px;
+    overflow: hidden;
+    padding: 3px;
+    float:left;
+    width:122px;
+}
+#fastCartContainer .ProductList .ProductImage {
+    width: 120px;
+    height: 120px;
+}
+.fastCartContent {
+    min-height: 235px;
+    width: 625px;
+}
+.fastCartContent h2 {
+    font-size: 25px;
+}
+.fastCartTop {
+    padding: 15px 5px;
+}
+.fastCartBottom {
+    padding: 0px 5px;
+}
+.fastCartItemBox {
+    padding: 10px 2px;
+    margin-left: 10px;
+    max-width: 230px;
+}
+.fastCartItemBox a {
+    text-decoration: none;
+}
+.fastCartThumb, .fastCartItemBox {
+    float: left;
+}
+.fastCartQuantity {
+    margin-top: 15px;
+}
+.fastCartSummaryBox {
+    text-align: right;
+    float: right;
+    padding: 10px;
+    max-width: 200px;
+}
+.fastCartSummaryBox .subtotal {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    clear:both;
+}
+.fastCartSummaryBox .actionLink {
+    margin-top:10px;
+}
+
+/* Start: SpecificInfoMessage */
+
+.SpecificInfoMessage {
+    padding: 8px 6px 8px 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* End: SpecificInfoMessage */
+
+div.categoryPicker {
+    border: 1px solid #bbbbbb;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    overflow: auto;
+    max-height: 300px;
+}
+
+/* Product options global structural styles */
+
+.productAddToCartBelow {
+    padding-top: 1.5em;
+    clear: both;
+}
+
+.CartContents .productAttributes td {
+    padding: 0 10px 0 0;
+}
+
+/**
+* customize item form
+*/
+
+.CartContents .ProductName .CustomizeItemLink {
+    font-weight: normal;
+}
+
+#CartEditProductFieldsForm  .productAttributeList {
+    max-height: 380px;
+    overflow: auto;
+}
+
+#CartEditProductFieldsForm .productAttributeLabel {
+    font-weight: normal;
+}
+
+/* most form styles are the same as the front end except for widths */
+#CartEditProductFieldsForm .productAttributeRow {
+    padding-left: 190px;
+}
+
+#CartEditProductFieldsForm .productAttributeLabel {
+    margin: 4px 0 4px -180px;
+    padding-top: 0;
+    width: 180px;
+}
+
+
+/* End: product options */
+
+#ModalContent, .ModalContent {
+    font-size: .95em;
+}
+
+/** shared styles for social buttons */
+
+#ProductDetails .Content h2 {
+    margin-top: 0px;
+    margin-right:140px;
+    float:left;
+}
+
+.AddThisButtonBox {
+    width: auto;
+    margin: 15px 0 15px 0 !important;
+}
+
+#cookieNotification {
+    position: fixed;
+    z-index: 99999;
+    display: none;
+    float: left;
+    width: 100%;
+    background: url(../images/cookie-sprite.png) repeat-x bottom;
+}
+#cookieNotification .cookie-inner {
+    width: 940px;
+    min-height: 46px;
+    margin: auto;
+}
+#cookieNotification .icon-info {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../images/cookie-sprite.png) no-repeat 0 8px;
+}
+#cookieNotification p {
+    float: left;
+    max-width: 750px;
+    margin: 0;
+    padding: 15px 0 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+#cookieNotification button {
+    float: left;
+    display: block;
+    width: 117px;
+    height: 28px;
+    cursor: pointer;
+    text-indent:  -9999px;
+    background: url(../images/cookie-sprite.png) no-repeat 0 -38px;
+    border: none;
+}
+
+/* social sharing tabs styles */
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    top: -6px;
+}
+
+ul.tabs li {
+    display: inline;
+    border: 1px solid #DADADA;
+    border-bottom: 0px solid #FFFFFF;
+    padding: 6px 8px 6px 0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #EFEFEF;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f7f7f7));
+    background: -moz-linear-gradient(top,  #ffffff,  #f7f7f7);
+    font-weight: bold;
+    color: #808080;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+ul.tabs li.active {
+    background: #FFFFFF;
+    color: #000000;
+    cursor: default;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+ul.tabs li img {
+    position: relative;
+    display: inline;
+    left: 6px;
+    top: 4px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+#tabcontent {
+    border: 1px solid #DADADA;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 5px;
+    -moz-border-radius-topleft: 0;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    margin-bottom: 20px;
+    min-height: 120px;
+}
+
+#tabcontent .photo {
+    width: 140px;
+    float: left;
+}
+
+#tabcontent .photo img {
+    display: block;
+    margin: auto;
+}
+
+#tabcontent #url {
+    display: block;
+    font-size: 10px;
+    color: #808080;
+}
+
+#shareDescription {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.sharebutton {
+    border: 1px solid #4169e1;
+    cursor: pointer;
+    padding: 3px 10px 5px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #4169e1;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#073daa', endColorstr='#749ae8');
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#073daa,endColorStr=#749ae8)';
+    background: -webkit-gradient(linear, left top, left bottom, from(royalblue), to(#073daa));
+    background: -moz-linear-gradient(top,  #073daa,  #749ae8);
+}
+
+.sharebutton a, .sharebutton a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#ChooseAnotherProduct li {
+    width: 120px;
+    height: 120px;
+    margin: 15px 0 0 15px;
+}
+
+#ChooseAnotherProduct img.ShareProductImage {
+    display:block;
+    margin: auto;
+}
+
+#ChooseAnotherProduct {
+    display:none;
+}
+
+#SharingDataWrapper {
+    height:160px;
+}
+
+#SharingDataWrapper p {
+    margin-bottom:10px;
+}
+
+#SharingDataChoices {
+    overflow:hidden;
+    float:left;
+}
+
+#SharingDataChoices li {
+    overflow:hidden;
+    float:left;
+    width: 120px;
+    height: 120px;
+    margin: 15px 0 0 15px;
+}
+
+.prev, .next {
+    margin-top:30px;
+    float:left;
+}
+
+#SharingDataWrapper.no-scroll #SharingDataChoices {
+    text-align:center;
+    width:100%;
+}
+
+#SharingDataWrapper.no-scroll li {
+    float:none;
+    display:inline-block;
+}
+
+#SharingDataWrapper.no-scroll #productlist {
+    margin-left:0;
+}
+
+#SharingDataWrapper.no-scroll #ImageScrollPrev, #SharingDataWrapper.no-scroll #ImageScrollNext {
+    display:none
+}
+
+/* end social sharing tabs styles */
+
+/* begin notification message styles, used on the order page */
+
+.NotifyMessage {
+    background: #FFFFDD;
+    border: 1px solid #CDCD9B;
+    padding: 15px;
+    padding-bottom: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.BoldUpper {
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+/* end notification message styles, used on the order page */
+
+.ReviewEmailHint {
+    color: #777;
+    margin-top: 5px;
+}
+
+.PostTitle {
+    padding-bottom: 5px;
+}
+
+.BlogPostContent .thumbnail {
+    float: left;
+    margin-right: 1rem;
+    width: 20%;
+    height: 120px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.3rem;
+}
+.BlogPostContent .thumbnail img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.bfc {
+    width: 10000px;
+    display: table-cell;
+}
+
+.PostBody img, .PostBody iframe, .PostBody video, .PostBody audio {
+    max-width: 100%;
+}
+
+.BlogShare {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.addthis_default_style .at300b {
+    padding: 0 3px;
+}
+
+/* recomended solution from AddThis  to hide FB counter */
+.addthis_button_facebook_like {
+    overflow:hidden;
+    width: 45px !important;
+}
+
+/* temp styles for blog tags */
+ul.blog-tags {
+    list-style: none;
+    margin: 20px 0 5px 0;
+}
+
+ul.blog-tags li {
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+ul.blog-tags li:hover {
+    background: #d4d4d4;
+}
+
+ul.blog-tags li {
+    padding: 7px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    background: #e8e8e8;
+    border: none;
+    border-radius: 3px;
+}
+
+.ApplePayButtonContainer {
+    margin-top: 5px;
+}
+
+.apple-pay-checkout-button {
+    display: none;
+}
+
+.apple-pay-supported .apple-pay-checkout-button {
+    display: inline-block;
+}
+
+.apple-pay-checkout-button {
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    min-width: 175px;
+    min-height: 32px;
+    max-height: 64px;
+    background-image: -webkit-named-image(apple-pay-logo-white);
+    background-color: black;
+    text-indent: -9000em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .apple-pay-checkout-button {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+.fastCartContent .apple-pay-checkout-button {
+    width: 100%;
+    margin-bottom: 0;
+}

@@ -1,0 +1,300 @@
+var data =
+    [
+
+        {
+            "name":"rice",
+            "nutrients":{
+                "calories":130,
+                "fat":0.3,
+                "cholestrol":0,
+                "sodium":0.1,
+                "potassium":3.5,
+                "carbohydrates":28,
+                "fiber":0.4,
+                "sugar":0.1,
+                "protein":2.7,
+                "vitaminA":0,
+                "vitaminC":0,
+                "calcium":1,
+                "iron":1,
+                "vitaminD":0,
+                "vitaminB6":5,
+                "vitaminB12":0,
+                "magnesium":3
+            },
+            "description":"Rice is the seed of the grass species Oryza sativa (Asian rice) or Oryza glaberrima (African rice). @"+"As a cereal grain, it is the most widely consumed staple food for a large part of the world's human population, especially in Asia.@"+"It is the agricultural commodity with the third-highest worldwide production, after sugarcane and maize, according to 2012 FAOSTAT data.@",
+            "cultivation":"Seeds are sown broadcast by hand. This method is practised in those areas which are comparatively dry and less fertile and do not have much labour to work in the fields. It is the easiest method requiring minimum input but its yields are also minimum.@"+"Ploughing of land and sowing of seeds is done by two persons. This method is mostly confined to peninsular India.@"+"To begin with, seeds are sown in nursery and seedlings are prepared. After 4-5 weeks the seedlings are uprooted and planted in the field which has already been prepared for the purpose. The entire process is done by hand. It is, therefore, a very difficult method and requires heavy inputs. But at the same time it gives some of the highest yields.@"
+        },
+        {
+            "name":"custardapple",
+            "nutrients":{
+                "calories":94,
+                "fat":0.3,
+                "cholestrol":0,
+                "sodium":9.8,
+                "potassium":24.7,
+                "carbohydrates":34,
+                "fiber":4.4,
+                "sugar":73,
+                "protein":2.1,
+                "vitaminA":0,
+                "vitaminC":60,
+                "calcium":2,
+                "iron":3,
+                "vitaminD":0,
+                "vitaminB6":10,
+                "vitaminB12":0,
+                "magnesium":5
+            },
+            "description":"Custard Apple is also known as sitaphal in India, is a delicious dry land fruit. The fruits are low in Saturated Fat, Cholesterol and Sodium and high in Vitamin C, Manganese, Iron and Potassium.@"+"Their nutritional value makes them ideal for maintaining optimum health.@"+"Custard apples are high in Vitamin C, which when eaten can help control diabetes better than any other medicine that you take. Therefore, because of its very high vitamin C content, we can very simply reap the diabetic benefits for custard apples.@",
+            "cultivation":" Before planting custard apples, it is important to understand the land and climate attributes they need to flourish.@"+"Custard apples grow best in sandy loam soils, but well-structured clay loams are also suitable. Although the tree’s main feeder roots are relatively shallow, at least 1 m of well-drained soil without heavy clay or rock is needed to avoid root rot and ensure good tree performance. @"+"Where the topsoil is less than 1 m deep, plant the trees on mounds. If possible, avoid soils that have previously grown these crops :tomatoes, potatoes,eggplant and capsicums.@"
+        },
+        {
+            "name":"cashew",
+            "nutrients":{
+                "calories":553,
+                "fat":44,
+                "cholestrol":0,
+                "sodium":12,
+                "potassium":66,
+                "carbohydrates":30,
+                "fiber":3.3,
+                "sugar":6,
+                "protein":18,
+                "vitaminA":0,
+                "vitaminC":0,
+                "calcium":3,
+                "iron":37,
+                "vitaminD":0,
+                "vitaminB6":20,
+                "vitaminB12":0,
+                "magnesium":73
+            },
+            "description":"The cashew tree (Anacardium occidentale) is a tropical evergreen tree that produces the cashew nut and the cashew apple. @"+"It can grow as high as 14 m (46 ft), but the dwarf cashew, growing up to 6 m (20 ft), has proved more profitable, with earlier maturity and higher yields.@"+"The cashew nut, often simply called a cashew, is widely consumed. It is eaten on its own, used in recipes, or processed into cashew cheese or cashew butter.@",
+            "cultivation":"It is better to select the land having good drainage and devoid of sub-surface hard rock or hard pan, for successful cultivation of cashew. The land should be ploughed thoroughly and levelled in case of agricultural lands.@"+"In case of forest lands, the jungle should be cleared well in advance and the debris burntCashew is a cross pollinated crop and exhibits wide variations in respect of nut, apple and yield of seedling progenies.@"+"Cashew trees are generally planted with a spacing of 7 to 9 meters usually by the square system. It is, however, preferable to plant by the equilateral triangular system, especially on the slopes, as this accommodates 15% more plants without affecting the growth and development of the trees.@"
+        },
+        {
+            "name":"guava",
+            "nutrients":{
+                "calories":68,
+                "fat":1,
+                "cholestrol":0,
+                "sodium":0.2,
+                "potassium":41.7,
+                "carbohydrates":13,
+                "fiber":5,
+                "sugar":9,
+                "protein":2.6,
+                "vitaminA":12,
+                "vitaminC":380,
+                "calcium":1,
+                "iron":19,
+                "vitaminD":0,
+                "vitaminB6":5,
+                "vitaminB12":0,
+                "magnesium":5
+            },
+            "description":"Guavas (singular guava /ˈɡwɑː.və/)[1] are common tropical fruits cultivated and enjoyed in many tropical and subtropical regions.@"+"Psidium guajava (common guava, lemon guava) is a small tree in the Myrtle family (Myrtaceae), native to Mexico, Central America, and northern South America.@"+"Although related species may also be called guavas, they belong to other species or genera, such as the 'pineapple guava' Acca sellowiana.@",
+            "cultivation":"Guava is grown in both tropical and sub-tropical regions upto 1,500 m. above m.s.l. It tolerates high temperatures and drought conditions prevalent in north India in summers.  However, it is susceptible to severe frost as it can kill the young plants.@"+"An annual rainfall of about 100 cm. is sufficient during the rainy season (July-September). Rainfall during the harvesting period deteriorates the quality of fruits.Time of fertilizer application depends on the region and crop variety.@"+"Drip irrigation has proved to be very beneficial for guava. About 60% of the water used for irrigation is saved.  Besides substantial increase in size and number of fruits is observed.@"
+        },
+        {
+            "name":"mango",
+            "nutrients":{
+                "calories":60,
+                "fat":0.4,
+                "cholestrol":0,
+                "sodium":1.8,
+                "potassium":16.8,
+                "carbohydrates":15,
+                "fiber":1.6,
+                "sugar":14,
+                "protein":0.8,
+                "vitaminA":21,
+                "vitaminC":60,
+                "calcium":1,
+                "iron":1,
+                "vitaminD":0,
+                "vitaminB6":5,
+                "vitaminB12":0,
+                "magnesium":2
+            },
+            "description":"Mangoes are juicy stone fruit (drupe) from numerous species of tropical trees belonging to the flowering plant genus Mangifera, cultivated mostly for their edible fruit. The majority of these species are found in nature as wild mangoes. @"+"The genus belongs to the cashew family Anacardiaceae. Mangoes are native to South Asia,from where the 'common mango' or 'Indian mango', Mangifera indica, has been distributed worldwide to become one of the most widely cultivated fruits in the tropics.@"+"Other Mangifera species (e.g. horse mango, Mangifera foetida) are also grown on a more localized basis.@",
+            "cultivation":"Mango is well adapted to tropical and sub-tropical climates. It thrives well in almost all the regions of the country but cannot be grown commercially in areas above 600 m. It cannot stand severe frost, especially when the tree is young.@"+"High temperature by itself is not so injurious to mango, but in combination with low humidity and high winds, it affects the tree adversely.Mango varieties usually thrive well in places with rainfall in the range of 75-375 cm. /annum and dry season.@"+"The distribution of rainfall is more important than its amount. Dry weather before blossoming is conducive to profuse flowering. Rain during flowering is detrimental to the crop as it interferes with pollination.@"
+        },
+        {
+            "name":"pineapple",
+            "nutrients":{
+                "calories":50,
+                "fat":0.1,
+                "cholestrol":0,
+                "sodium":1,
+                "potassium":10.9,
+                "carbohydrates":13,
+                "fiber":1.4,
+                "sugar":10,
+                "protein":0.5,
+                "vitaminA":1,
+                "vitaminC":79,
+                "calcium":1,
+                "iron":1,
+                "vitaminD":5,
+                "vitaminB6":0,
+                "vitaminB12":0,
+                "magnesium":3
+            },
+            "description":"The pineapple (Ananas comosus) is a tropical plant with an edible multiple fruit consisting of coalesced berries, also called pineapples, and the most economically significant plant in the Bromeliaceae family.@"+"Pineapples may be cultivated from a crown cutting of the fruit, possibly flowering in 5-10 months and fruiting in the following six months. Pineapples do not ripen significantly after harvest.@"+"Pineapples can be consumed fresh, cooked, juiced, or preserved. They are found in a wide array of cuisines. In addition to consumption, the pineapple leaves are used to produce the textile fiber pina.@",
+            "cultivation":"It is being cultivated in high rainfall and humid coastal regions of peninsular India and hilly areas of North-Eastern region.Of late, it has been shown that pineapple can also be grown commercially in the interior plains with medium rainfall and supplementary protective irrigation.@"+"Pineapple is a humid tropical plant. It grows well, both in the plains and also at elevations not exceeding 900 metres. It tolerates neither very high temperature nor frost.@"+"Pineapple grows in almost any type of soil, provided it is free-draining. Slightly acidic soil with pH range of 5.5 to 6.0 is considered optimum for pineapple cultivation.@"
+        },
+        {
+            "name":"maize",
+            "nutrients":{
+                "calories":365,
+                "fat":4.7,
+                "cholestrol":0,
+                "sodium":3.5,
+                "potassium":28.3,
+                "carbohydrates":74,
+                "fiber":7,
+                "sugar":0.6,
+                "protein":9,
+                "vitaminA":0,
+                "vitaminC":0,
+                "calcium":1,
+                "iron":15,
+                "vitaminD":0,
+                "vitaminB6":30,
+                "vitaminB12":0,
+                "magnesium":31
+            },
+            "description":"Maize (/ˈmeɪz/ mayz; Zea mays subsp. mays, from Spanish: maíz after Taíno mahiz), in the USA also known as corn, is a large grain plant first domesticated by indigenous peoples in Mexico about 10,000 years ago. @"+"The six major types of corn are dent corn, flint corn, pod corn, popcorn, flour corn, and sweet corn.@"+"The maize plant is often 3 m (10 ft) in height, though some natural strains can grow 12 m (39 ft).[27] The stem is commonly composed of 20 internodes of 18 cm (7.1 in) length. A leaf, which grows from each node, is generally 9 cm (4 in) in width and 120 cm (4 ft) in length.@",
+            "cultivation":"Maize requires a firm and compact seedbed free from stubbles and weed. One deep ploughing should be given, followed by two or three harrowings to bring the soil to a fine tilth.@"+"Maize does well on a wide range of climatic conditions, and it is grown in the tropical as well as temperate regions, from sea-levels up to altitudes of 2500m. It is however susceptible to frost at all stages of its growth.@"+"Among all the cereals, maize in general and hybrids in particular are responsive to nutrients applied either through organic or inorganic sources. The rate of nutrient application depends mainly on soil nutrient status/balance and cropping system.@"
+        },
+        {
+            "name":"banana",
+            "nutrients":{
+                "calories":89,
+                "fat":0.3,
+                "cholestrol":0,
+                "sodium":0.1,
+                "potassium":35.8,
+                "carbohydrates":23,
+                "fiber":2.6,
+                "sugar":12,
+                "protein":1.1,
+                "vitaminA":1,
+                "vitaminC":14,
+                "calcium":0,
+                "iron":1,
+                "vitaminD":0,
+                "vitaminB6":20,
+                "vitaminB12":0,
+                "magnesium":6
+            },
+            "description":"The banana is an edible fruit – botanically a berry[1][2] – produced by several kinds of large herbaceous flowering plants in the genus Musa.@"+"In some countries, bananas used for cooking may be called plantains, in contrast to dessert bananas. @"+"The fruit is variable in size, color and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind which may be green, yellow, red, purple, or brown when ripe.@",
+            "cultivation":"Banana, basically a tropical crop, grows well in a temperature range of 15ºC – 35ºC with relative humidity of 75-85%.Prior to planting banana, green manuring crop like daincha, cowpea etc. may be grown. The land can be ploughed 2-4 times and leveled. @"+"Ratovator or harrow is used to break the clod and bring the soil to a fine tilt. During soil preparation basal dose of FYM (about 50 tonnes/ha. before last harrowing) is added and thoroughly mixed into the soil.@"+"About 70% of the farmers are using suckers as planting material while the rest 30% of the farmers are using tissue culture seedlings.@"
+        },
+        {
+            "name":"wheat",
+            "nutrients":{
+                "calories":339,
+                "fat":2.5,
+                "cholestrol":0,
+                "sodium":0.2,
+                "potassium":43.1,
+                "carbohydrates":71,
+                "fiber":10,
+                "sugar":3.5,
+                "protein":14,
+                "vitaminA":0,
+                "vitaminC":0,
+                "calcium":3,
+                "iron":19,
+                "vitaminD":0,
+                "vitaminB6":20,
+                "vitaminB12":0,
+                "magnesium":36
+            },
+            "description":"Wheat (Triticum spp., most commonly T. aestivum) is a cereal grain (botanically, a type of fruit called a caryopsis), originally from the Levant region but now cultivated worldwide. @"+"In 2016, world production of wheat was 749 million tonnes, making it the second most-produced cereal after maize (1.03 billion tonnes), with more than rice (499 million tonnes).@"+"The wheat plant has long, slender leaves, stems that are hollow in most types of wheat plants, and heads that have many kinds of flowers, from 20 to 100. The flowers are grouped together in spikelets.@",
+            "cultivation":"The wheat crop requires a well-pulverized but compact seed bed for good and uniform germination. Three or four ploughings in the summer, repeated harrowing in the rainy season, followed by three or four cultivations and planking immediately before sowing produce a good, firm seed bed for the dry crop on alluvial soils. @"+"For the irrigated crop, the land is given a pre-sowing irrigation (palewa or raund) and the number of ploughings is reduced. Where white ants or other pests are a problem,Aldrin 5% or BHC 10% dust at the rate of 25 kg/ha should be applied to the soil after the last ploughing or before planking.@"+"The high yielding wheat varieties should be given five to six irrigations at their critical growth stages@"
+        },
+        {
+            "name":"potato",
+            "nutrients":{
+                "calories":77,
+                "fat":0.1,
+                "cholestrol":0,
+                "sodium":0.6,
+                "potassium":42.1,
+                "carbohydrates":17,
+                "fiber":2.2,
+                "sugar":0.8,
+                "protein":2,
+                "vitaminA":0,
+                "vitaminC":32,
+                "calcium":1,
+                "iron":4,
+                "vitaminD":0,
+                "vitaminB6":15,
+                "vitaminB12":12,
+                "magnesium":5
+            },
+            "description":"The potato is a starchy, tuberous crop from the perennial nightshade Solanum tuberosum. The word 'potato' may refer either to the plant itself or to the edible tuber.@"+"In the Andes, where the species is indigenous, there are some other closely related cultivated potato species.@"+"Potatoes were introduced outside the Andes region approximately four centuries ago, and have since become an integral part of much of the world's food supply.@",
+            "cultivation":"They need a cool climate, and also need to be watched to prevent sunburn. Potatoes can be grown as a winter crop in warmer climate zones.Plant seed potatoes (pieces of whole potato or a small whole potato, with at least 2 eyes per piece) 0-2 weeks after last spring frost.@"+"If you are cutting up potato pieces for planting, do so a 1-2 days ahead of time. This will give them the chance to form a protective layer, both for moisture retention and rot resistance.@"+"Potatoes thrive in well-drained, loose soil. Potatoes need consistent moisture, so water regularly when tubers start to form.@"
+        },
+        {
+            "name":"onion",
+            "nutrients":{
+                "calories":42,
+                "fat":0.1,
+                "cholestrol":0,
+                "sodium":0.4,
+                "potassium":14.6,
+                "carbohydrates":9,
+                "fiber":1.7,
+                "sugar":4.2,
+                "protein":1.1,
+                "vitaminA":0,
+                "vitaminC":12,
+                "calcium":2,
+                "iron":1,
+                "vitaminD":0,
+                "vitaminB6":5,
+                "vitaminB12":0,
+                "magnesium":2
+            },
+            "description":"The onion (Allium cepa L., from Latin cepa 'onion'), also known as the bulb onion or common onion, is a vegetable and is the most widely cultivated species of the genus Allium.The onion plant has a fan of hollow, bluish-green leaves and its bulb at the base of the plant begins to swell when a certain day-length is reached.@"+"The bulbs are composed of shortened, compressed, underground stems surrounded by fleshy modified scale (leaves) that envelop a central bud at the tip of the stem.@"+"This genus also contains several other species variously referred to as onions and cultivated for food.@",
+            "cultivation":"Onions are a cold-season crop, easy to grow because of their hardiness.Select a location with full sun where your onions won’t be shaded by other plants.@"+"Soil needs to be well-drained, loose, and rich in nitrogen; compact soil affects bulb development.Fertilize every few weeks with nitrogen to get big bulbs. Cease fertilizing when the onions push the soil away and the bulbing process has started. Do not put the soil back around the onions; the bulb needs to emerge above the soil.@"+"Generally, onions do not need consistent watering if mulch is used. About one inch of water per week (including rain water) is sufficient. If you want sweeter onions, water more.Onions will look healthy even if they are bone dry, be sure to water during drought conditions.@"
+        },
+        {
+            "name":"sugarcane",
+            "nutrients":{
+                "calories":269,
+                "fat":0,
+                "cholestrol":0,
+                "sodium":5.8,
+                "potassium":6.3,
+                "carbohydrates":73,
+                "fiber":0,
+                "sugar":73,
+                "protein":0,
+                "vitaminA":0,
+                "vitaminC":0,
+                "calcium":1,
+                "iron":19,
+                "vitaminD":0,
+                "vitaminB6":0,
+                "vitaminB12":0,
+                "magnesium":2
+            },
+            "description":"Sugarcane, or sugar cane, are several species of tall perennial true grasses of the genus Saccharum, tribe Andropogoneae, native to the warm temperate to tropical regions of South Asia and Melanesia, and used for sugar production.@"+"It has stout, jointed, fibrous stalks that are rich in the sugar sucrose, which accumulates in the stalk internodes. The plant is two to six meters (six to twenty feet) tall.@"+"All sugar cane species interbreed and the major commercial cultivars are complex hybrids@",
+            "cultivation":"Sugarcane cultivation requires a tropical or temperate climate, with a minimum of 60 cm (24 in) of annual moisture. It is one of the most efficient photosynthesizers in the plant kingdom. It is a C4 plant, able to convert up to 1% of incident solar energy into biomass.@"+"Sugarcane is cultivated in the tropics and subtropics in areas with a plentiful supply of water, for a continuous period of more than 6-7 months each year, either from natural rainfall or through irrigation. The crop does not tolerate severe frosts.@"+"Sugarcane can be grown on many soils ranging from highly fertile well-drained mollisols, through heavy cracking vertisols, infertile acid oxisols, peaty histosols, to rocky andisols. Both plentiful sunshine and water supplies increase cane production.@"
+        }
+
+    ];
+
+data.forEach(function(item){
+    console.log("\n"+item.name);
+    console.log(item.nutrients.calcium);
+});
+
+//console.log(data);
