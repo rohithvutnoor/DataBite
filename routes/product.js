@@ -93,12 +93,17 @@ function insertTransaction(cb){
 
 router.post('/order',function(req,res, next) {
     var cb = req.body.cart;
-    console.log(cb);
+    var clearObject = [];
+    for(var q=0;q<cb.length;q++){
+        clearObject.push(cb[q].substr(0,cb[q].indexOf('@')));
+    }
+    console.log(clearObject);
     insertTransaction(cb);
 
         res.render('order', {
             title: 'Home',
-            name:"nothing"
+            name:"nothing",
+            data:clearObject
         });
 
 });
