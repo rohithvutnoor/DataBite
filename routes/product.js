@@ -23,7 +23,17 @@ function insertTransaction(cb){
         var productCollection = db.collection('items');
         console.log("Connected successfully to server3");
         var collection3 = db.collection('transactions');
-        var transact1 = new transaction(cb);
+
+        var clearObj = [];
+        for(var q=0;q<cb.length;q++){
+            clearObj.push(cb[q].substr(0,cb[q].indexOf('@')));
+        }
+        //var cc = ["rice" , "custardapple" , "cashew" , "guava" , "mango" , "pineapple" , "maize" , "banana" , "wheat" , "potato" , "onion" , "sugarcane"];
+
+        //setTimeout(function () {
+        var transact1 = new transaction(clearObj);
+        //}, 100);
+
         var ranks = [];
         var names = [];
         for(var v=0;v<cb.length;v++){
@@ -304,19 +314,23 @@ var developItemSets = function(db, transCol, requiredItem) {
         });
     };
     var sc = doit(function(result){
-
+        console.log("Result\n");
         console.log(result);
+        //sd = result;
+        sd.length = 0;
         setTimeout(function () {
-            for(var i=0;i<result.length;i++){
-                sd.push(result[i]);
+
+            for(var i=result.length;i>=0;i--){
+                sd.insert(0,result[i]);
+                //sd.push(result[i]);
             }
             //console.log(sc);//return result;
-        }, 500);
+        }, 100);
 
     });
     setTimeout(function () {
-        console.log(sd);//return result;
-    }, 1000);
+        console.log(sd[0]);//return result;
+    }, 2000);
 };
 
 
@@ -326,171 +340,172 @@ var developItemSets = function(db, transCol, requiredItem) {
 //1
 router.get('/sugarcane', function(req, res, next) {
 
-    var rcmnd = mine2("sugarcane");
+    var rcmnd1 = mine2("sugarcane");
     mine3("sugarcane");
     setTimeout(function () {
         res.render('product', {
             title:"sugarcane",
             name:"sugarcane",
-            data:rcmnd,
+            data:rcmnd1,
             currentItem:itd[0]
         });
+       // itd.pop();
     }, 2500);
 
 });
 
 //2
 router.get('/rice', function(req, res, next) {
-    var rcmnd = mine2("rice");
+    var rcmnd2 = mine2("rice");
     mine3("rice");
     setTimeout(function () {
     res.render('product', {
         title:"rice",
         name:"rice",
-        data:rcmnd,
+        data:rcmnd2,
         currentItem:itd[0]
     });
-    }, 1600);
+    }, 2500);
 });
 
 //3
 router.get('/potato', function(req, res, next) {
-    var rcmnd = mine2("potato");
+    var rcmnd3 = mine2("potato");
     mine3("potato");
     setTimeout(function () {
     res.render('product', {
         title:"potato",
         name:"potato",
-        data:rcmnd,
+        data:rcmnd3,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //4
 router.get('/wheat', function(req, res, next) {
-    var rcmnd = mine2("wheat");
+    var rcmnd4 = mine2("wheat");
     mine3("wheat");
     setTimeout(function () {
     res.render('product', {
         title:"wheat",
         name:"wheat",
-        data:rcmnd,
+        data:rcmnd4,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //5
 router.get('/onion', function(req, res, next) {
-    var rcmnd = mine2("onion");
+    var rcmnd5 = mine2("onion");
     mine3("onion");
     setTimeout(function () {
     res.render('product', {
         title:"onion",
         name:"onion",
-        data:rcmnd,
+        data:rcmnd5,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //6
 router.get('/maize', function(req, res, next) {
-    var rcmnd = mine2("maize");
+    var rcmnd6 = mine2("maize");
     mine3("maize");
     setTimeout(function () {
     res.render('product', {
         title:"maize",
         name:"maize",
-        data:rcmnd,
+        data:rcmnd6,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //7
 router.get('/banana', function(req, res, next) {
-    var rcmnd = mine2("banana");
+    var rcmnd7 = mine2("banana");
     mine3("banana");
     setTimeout(function () {
     res.render('product', {
         title:"banana",
         name:"banana",
-        data:rcmnd,
+        data:rcmnd7,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //8
 router.get('/cashew', function(req, res, next) {
-    var rcmnd = mine2("cashew");
+    var rcmnd8 = mine2("cashew");
     mine3("cashew");
     setTimeout(function () {
     res.render('product', {
         title:"cashew",
         name:"cashew",
-        data:rcmnd,
+        data:rcmnd8,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //9
 router.get('/guava', function(req, res, next) {
-    var rcmnd = mine2("guava");
+    var rcmnd9 = mine2("guava");
     mine3("guava");
     setTimeout(function () {
     res.render('product', {
         title:"guava",
         name:"guava",
-        data:rcmnd,
+        data:rcmnd9,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //10
 router.get('/mango', function(req, res, next) {
-    var rcmnd = mine2("mango");
+    var rcmnd10 = mine2("mango");
     mine3("mango");
     setTimeout(function () {
     res.render('product', {
         title:"products",
         name:"mango",
-        data:rcmnd,
+        data:rcmnd10,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //11
 router.get('/pineapple', function(req, res, next) {
-    var rcmnd = mine2("pineapple");
+    var rcmnd11 = mine2("pineapple");
     mine3("pineapple");
     setTimeout(function () {
     res.render('product', {
         title:"pineapple",
         name:"pineapple",
-        data:rcmnd,
+        data:rcmnd11,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 //12
 router.get('/custardapple', function(req, res, next) {
-    var rcmnd = mine2("custardapple");
+    var rcmnd12 = mine2("custardapple");
     mine3("custardapple");
     setTimeout(function () {
     res.render('product', {
         title:"custardapple",
         name:"custardapple",
-        data:rcmnd,
+        data:rcmnd12,
         currentItem:itd[0]
     });
-    }, 1500);
+    }, 2500);
 });
 
 
