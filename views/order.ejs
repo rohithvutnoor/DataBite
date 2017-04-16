@@ -64,7 +64,27 @@
                 <!--{{game}}
                 <br>--><h2>Thank You Visit Again</h2>
                         You have Bought <%= data[0] %>&nbsp;<%= data[1]%>&nbsp;<%= data[2]%>
+
                 </p>
+                <br><br><br><br><br><br>
+                <div>
+                    <% data.forEach(function(item){%>
+                    <div class="imgs"><a href="/product/<%= item%>">
+                            <div class="card" style="width: 30rem;">
+                                <center><img class="card-img-top"  style="width: 200px; height: 120px;" src="../images/productImage/<%= item%>.jpg" alt="Card image cap">
+                                </center><div class="card-block">
+                                    <center><h4 class="card-title"><%= item%></h4></center>
+                                </div>
+                            </div></a>
+                    </div>
+                    <%});%>
+                    <style>
+                        .imgs{
+                            float:left;
+                            align-content: center;
+                        }
+                    </style>
+                </div>
 
             </div>
             -
