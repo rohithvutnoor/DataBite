@@ -79,7 +79,17 @@
                 align-content: center;
               }
             </style>
+            </br></br></br></br></br></br>
+          </div>
+          <div>
 
+            <ul>
+              <br><br><br><br><br><br>
+              <h2>Notifications India Agri</h2>
+              <% remote.forEach(function(item){%>
+              <br><li><h3><a href="<%= item.link%>"><%= item.title%></a></h3></li>
+              <%});%>
+            </ul>
           </div>
 
         </div>
