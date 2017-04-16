@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
     res.render('product',{
         title:"products",
-        name:"nothing"
+        name:"You are on the wrong path"
     });
 });
 
@@ -93,12 +93,13 @@ function insertTransaction(cb){
 
 router.post('/order',function(req,res, next) {
     var cb = req.body.cart;
+    insertTransaction(cb);
     var clearObject = [];
     for(var q=0;q<cb.length;q++){
         clearObject.push(cb[q].substr(0,cb[q].indexOf('@')));
     }
     console.log(clearObject);
-    insertTransaction(cb);
+
 
         res.render('order', {
             title: 'Home',
@@ -135,6 +136,7 @@ var mine2 = function(required) {
     return sd;
 };
 var currentItem = [];
+
 function mine3(req) {
     MongoClient.connect(url, function(err, db) {
         assert.equal(null, err);
@@ -172,7 +174,7 @@ function mine3(req) {
         db.close();
     });
     setTimeout(function () {
-        console.log(itd[0].price);
+        //console.log(itd[0].price);
     }, 500);
     return itd[0];
 };
