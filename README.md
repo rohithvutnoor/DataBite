@@ -2,4 +2,4 @@
 ---
 ### A Web Application
 
-[DataBite](http://rohithvutnoor.com/images/project/DataBite.png)
+![DataBite](http://rohithvutnoor.com/images/project/DataBite.png)
