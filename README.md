@@ -26,4 +26,4 @@
 ![DataBite](http://rohithvutnoor.com/images/project/c2.png)
 
 ### Product Page
-![DataBite](http://rohithvutnoor.com/images/project/pp12.png)
+![DataBite](http://rohithvutnoor.com/images/project/pp12.jpg)
