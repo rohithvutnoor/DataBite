@@ -328,8 +328,8 @@ var developItemSets = function(db, transCol, requiredItem) {
         setTimeout(function () {
 
             for(var i=result.length;i>=0;i--){
-                sd.insert(0,result[i]);
-                //sd.push(result[i]);
+                //sd.insert(0,result[i]);
+                sd.push(result[i]);
             }
             //console.log(sc);//return result;
         }, 100);
