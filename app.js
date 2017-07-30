@@ -11,7 +11,8 @@ var product = require('./routes/product');
 var order = require('./routes/order');
 
 var MongoClient  = require('mongodb').MongoClient;
-var url = "mongodb://localhost/sampleApriori";
+var url = 'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databitedb';
+//"mongodb://localhost/sampleApriori";//databitedb
 var str = "";
 var app = express();
 

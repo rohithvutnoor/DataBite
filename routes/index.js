@@ -7,7 +7,9 @@ var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
 
-var url = 'mongodb://localhost:27017/sampleApriori';
+var url = 'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databitedb';
+//'mongodb://localhost:27017/sampleApriori';
+// CloudDB : mlab :    'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databitedb'
 var data = [];
 var url2 = "http://agricoop.nic.in/";
 

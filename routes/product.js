@@ -109,7 +109,8 @@ router.post('/order',function(req,res, next) {
 
 });
 
-var url = 'mongodb://localhost:27017/sampleApriori';
+var url = 'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databitedb';
+//'mongodb://localhost:27017/sampleApriori';
 //var db = MongoClient.connect("mongodb://localhost:27017/exampleDb");
 var sd= [];
 var itd=[];
