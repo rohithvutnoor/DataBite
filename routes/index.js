@@ -13,7 +13,7 @@ var url = 'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databit
 var data = ["",""];
 /*
 var url2 = "http://agricoop.nic.in/";
-
+/*
 request(url2,function(err,res,body){
   var $ =  cheerio.load(body);
   $('a', 'div.item-list').each(function(){
