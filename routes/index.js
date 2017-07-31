@@ -3,14 +3,15 @@ var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var path = require('path');
-var request = require('request');
-var cheerio = require('cheerio');
+//var request = require('request');
+//var cheerio = require('cheerio');
 var fs = require('fs');
 
 var url = 'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databitedb';
 //'mongodb://localhost:27017/sampleApriori';
 // CloudDB : mlab :    'mongodb://rohithvutnoor:rohithvutnoor@ds034677.mlab.com:34677/databitedb'
-var data = [];
+var data = ["",""];
+/*
 var url2 = "http://agricoop.nic.in/";
 
 request(url2,function(err,res,body){
@@ -25,6 +26,7 @@ request(url2,function(err,res,body){
   });
   console.log(data);
 });
+*/
 router.get('/', function(req, res, next) {
 
 
